@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockenau Capital</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuente Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Aplicar la fuente Inter como predeterminada */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Color personalizado basado en el logo */
+        .mockenau-blue {
+            color: #0c3c6d; /* Aproximación del color del logo */
+        }
+        .bg-mockenau-blue {
+            background-color: #0c3c6d;
+        }
+        .hover\:bg-mockenau-blue-dark:hover {
+            background-color: #082a4f;
+        }
+        /* Estilo para el botón de idioma activo */
+        .lang-btn.active {
+            font-weight: 700;
+            color: #0c3c6d;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- ===== Header ===== -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div>
+                <img src="image_937042.png" alt="Mockenau Capital Logo" class="h-10 md:h-12">
+            </div>
+
+            <!-- Menú de Navegación -->
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#services" class="text-gray-600 hover:mockenau-blue transition-colors" data-key="nav_services">Servicios</a>
+                <a href="#achievements" class="text-gray-600 hover:mockenau-blue transition-colors" data-key="nav_achievements">Logros</a>
+                <a href="#contact" class="bg-mockenau-blue text-white py-2 px-5 rounded-full hover:bg-mockenau-blue-dark transition-colors" data-key="nav_contact">Contacto</a>
+            </div>
+
+            <!-- Selector de Idioma -->
+            <div class="flex space-x-2 text-sm">
+                <button id="lang-es" class="lang-btn text-gray-500 hover:mockenau-blue active" data-lang="es">ES</button>
+                <span class="text-gray-300">|</span>
+                <button id="lang-en" class="lang-btn text-gray-500 hover:mockenau-blue" data-lang="en">EN</button>
+            </div>
+
+            <!-- Menú Móvil (placeholder) -->
+            <div class="md:hidden">
+                <!-- Se podría implementar un botón de hamburguesa aquí -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <main>
+        <section class="bg-gradient-to-r from-gray-100 to-gray-200 min-h-[60vh] flex items-center">
+            <div class="container mx-auto px-6 text-left flex items-center">
+                <div class="w-full md:w-1/2 py-16">
+                    <h1 class="text-4xl md:text-5xl font-bold mockenau-blue mb-6 leading-tight" data-key="hero_title">
+                        Socios estratégicos en finanzas y desarrollo de negocios
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8" data-key="hero_subtitle">
+                        Asesoría integral para optimizar su capital y potenciar su crecimiento.
+                    </p>
+                    <a href="#contact" class="bg-mockenau-blue text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-mockenau-blue-dark transition-colors" data-key="hero_cta">
+                        Contáctenos
+                    </a>
+                </div>
+                <!-- Imagen de Hero (placeholder) -->
+                <div class="hidden md:block md:w-1/2 text-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-64 w-64 inline-block text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V7a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2zM9 9h6m-6 3h6m-6 3h6" />
+                    </svg>
+                    <p class="text-gray-400" data-key="hero_image_placeholder">Imagen profesional de finanzas</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Services Section ===== -->
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mockenau-blue mb-16" data-key="services_title">
+                    Nuestros Servicios
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Servicio 1: Asesoría Financiera -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mockenau-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 mockenau-blue" data-key="service1_title">Asesoría Financiera</h3>
+                        <div class="text-gray-600 space-y-2" data-key="service1_desc">
+                            <p>&bull; Levantamiento de capital y contingentes.</p>
+                            <p>&bull; Negociación con instituciones financieras.</p>
+                            <p>&bull; Optimización de la estructura de capital.</p>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 2: Desarrollo de Negocios -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mockenau-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v4.517l1 1V14a3 3 0 01-3 3h-2a3 3 0 01-3-3v-4.517l1-1V5l-1-1z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 mockenau-blue" data-key="service2_title">Desarrollo de Negocios</h3>
+                        <div class="text-gray-600 space-y-2" data-key="service2_desc">
+                            <p>&bull; Nuevos servicios y/o productos.</p>
+                            <p>&bull; Alianzas estratégicas.</p>
+                            <p>&bull; Expansión.</p>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 3: Finanzas Corporativas -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mockenau-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V7a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2zM9 9h6m-6 3h6m-6 3h6" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 mockenau-blue" data-key="service3_title">Finanzas Corporativas</h3>
+                        <div class="text-gray-600 space-y-2" data-key="service3_desc">
+                            <p>&bull; Asesoría en inversiones.</p>
+                            <p>&bull; M&A (fusiones y adquisiciones).</p>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 4: Servicios Tributarios -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mockenau-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H9a2 2 0 00-2 2v2m-6 2v4a2 2 0 002 2h14a2 2 0 002-2v-4m-5 0v-2a2 2 0 00-2-2H9a2 2 0 00-2 2v2" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 mockenau-blue" data-key="service4_title">Servicios Tributarios</h3>
+                        <div class="text-gray-600 space-y-2" data-key="service4_desc">
+                            <p>&bull; Divisiones.</p>
+                            <p>&bull; Gobiernos corporativos.</p>
+                            <p>&bull; Planificación tributaria.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Achievements Section ===== -->
+        <section id="achievements" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mockenau-blue mb-16" data-key="achievements_title">
+                    Nuestra Trayectoria y Logros
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <!-- Métrica 1: Montos Transados -->
+                    <div>
+                        <span class="block text-5xl md:text-6xl font-bold mockenau-blue" data-key="metric1_value">+1.500 M</span>
+                        <span class="block text-lg text-gray-600 mt-2" data-key="metric1_label">En montos transados</span>
+                    </div>
+                    <!-- Métrica 2: Clientes -->
+                    <div>
+                        <span class="block text-5xl md:text-6xl font-bold mockenau-blue" data-key="metric2_value">+50</span>
+                        <span class="block text-lg text-gray-600 mt-2" data-key="metric2_label">Clientes satisfechos</span>
+                    </div>
+                    <!-- Métrica 3: Experiencia -->
+                    <div>
+                        <span class="block text-5xl md:text-6xl font-bold mockenau-blue" data-key="metric3_value">+15</span>
+                        <span class="block text-lg text-gray-600 mt-2" data-key="metric3_label">Años de experiencia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer id="contact" class="bg-mockenau-blue text-gray-300 py-16">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Columna 1: Logo e Info -->
+            <div>
+                <img src="image_937042.png" alt="Mockenau Capital Logo Blanco" class="h-10 mb-4 filter brightness-0 invert">
+                <p class="text-sm" data-key="footer_about">
+                    Socios estratégicos en finanzas, inversiones y desarrollo de negocios.
+                </p>
+            </div>
+            
+            <!-- Columna 2: Contacto -->
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4" data-key="footer_contact_title">Contacto</h4>
+                <ul class="text-sm space-y-2">
+                    <li data-key="footer_address">Av. Principal 123, Oficina 45, Santiago, Chile</li>
+                    <li data-key="footer_phone">+56 2 1234 5678</li>
+                    <li data-key="footer_email">contacto@mockenaucapital.com</li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Links (placeholder) -->
+             <div>
+                <h4 class="text-lg font-semibold text-white mb-4" data-key="footer_links_title">Enlaces Rápidos</h4>
+                <ul class="text-sm space-y-2">
+                    <li><a href="#services" class="hover:text-white" data-key="nav_services">Servicios</a></li>
+                    <li><a href="#achievements" class="hover:text-white" data-key="nav_achievements">Logros</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 text-center text-gray-400 mt-12 border-t border-gray-700 pt-8 text-sm">
+            <p data-key="footer_copyright">© 2025 Mockenau Capital. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <!-- ===== JavaScript para Traducción ===== -->
+    <script>
+        // Objeto con todas las traducciones
+        const translations = {
+            es: {
+                nav_services: "Servicios",
+                nav_achievements: "Logros",
+                nav_contact: "Contacto",
+                hero_title: "Socios estratégicos en finanzas y desarrollo de negocios",
+                hero_subtitle: "Asesoría integral para optimizar su capital y potenciar su crecimiento.",
+                hero_cta: "Contáctenos",
+                hero_image_placeholder: "Imagen profesional de finanzas",
+                services_title: "Nuestros Servicios",
+                service1_title: "Asesoría Financiera",
+                service1_desc: `
+                    <p>&bull; Levantamiento de capital y contingentes.</p>
+                    <p>&bull; Negociación con instituciones financieras.</p>
+                    <p>&bull; Optimización de la estructura de capital.</p>
+                `,
+                service2_title: "Desarrollo de Negocios",
+                service2_desc: `
+                    <p>&bull; Nuevos servicios y/o productos.</p>
+                    <p>&bull; Alianzas estratégicas.</p>
+                    <p>&bull; Expansión.</p>
+                `,
+                service3_title: "Finanzas Corporativas",
+                service3_desc: `
+                    <p>&bull; Asesoría en inversiones.</p>
+                    <p>&bull; M&A (fusiones y adquisiciones).</p>
+                `,
+                service4_title: "Servicios Tributarios",
+                service4_desc: `
+                    <p>&bull; Divisiones.</p>
+                    <p>&bull; Gobiernos corporativos.</p>
+                    <p>&bull; Planificación tributaria.</p>
+                `,
+                achievements_title: "Nuestra Trayectoria y Logros",
+                metric1_value: "+1.500 M",
+                metric1_label: "En montos transados",
+                metric2_value: "+50",
+                metric2_label: "Clientes satisfechos",
+                metric3_value: "+15",
+                metric3_label: "Años de experiencia",
+                footer_about: "Socios estratégicos en finanzas, inversiones y desarrollo de negocios.",
+                footer_contact_title: "Contacto",
+                footer_address: "Av. Principal 123, Oficina 45, Santiago, Chile",
+                footer_phone: "+56 2 1234 5678",
+                footer_email: "contacto@mockenaucapital.com",
+                footer_links_title: "Enlaces Rápidos",
+                footer_copyright: "© 2025 Mockenau Capital. Todos los derechos reservados.",
+            },
+            en: {
+                nav_services: "Services",
+                nav_achievements: "Achievements",
+                nav_contact: "Contact",
+                hero_title: "Strategic partners in finance and business development",
+                hero_subtitle: "Comprehensive advisory to optimize your capital and boost your growth.",
+                hero_cta: "Contact Us",
+                hero_image_placeholder: "Professional finance image",
+                services_title: "Our Services",
+                service1_title: "Financial Advisory",
+                service1_desc: `
+                    <p>&bull; Capital raising and contingent liabilities.</p>
+                    <p>&bull; Negotiation with financial institutions.</p>
+                    <p>&bull; Optimization of capital structure.</p>
+                `,
+                service2_title: "Business Development",
+                service2_desc: `
+                    <p>&bull; New services and/or products.</p>
+                    <p>&bull; Strategic alliances.</p>
+                    <p>&bull; Expansion.</p>
+                `,
+                service3_title: "Corporate Finance",
+                service3_desc: `
+                    <p>&bull; Investment advisory.</p>
+                    <p>&bull; M&A (Mergers and Acquisitions).</p>
+                `,
+                service4_title: "Tax Services",
+                service4_desc: `
+                    <p>&bull; Divisions.</p>
+                    <p>&bull; Corporate governance.</p>
+                    <p>&bull; Tax planning.</p>
+                `,
+                achievements_title: "Our Track Record and Achievements",
+                metric1_value: "+1.5B", // Asumiendo que M es Millones (M) y B es Billones (US)
+                metric1_label: "In transaction value",
+                metric2_value: "+50",
+                metric2_label: "Satisfied clients",
+                metric3_value: "+15",
+                metric3_label: "Years of experience",
+                footer_about: "Strategic partners in finance, investments, and business development.",
+                footer_contact_title: "Contact",
+                footer_address: "Main Ave 123, Office 45, Santiago, Chile",
+                footer_phone: "+56 2 1234 5678",
+                footer_email: "contact@mockenaucapital.com",
+                footer_links_title: "Quick Links",
+                footer_copyright: "© 2025 Mockenau Capital. All rights reserved.",
+            }
+        };
+
+        // Función para cambiar el idioma
+        function setLanguage(lang) {
+            // Guardar preferencia (opcional)
+            // localStorage.setItem('lang', lang);
+
+            // Cambiar el idioma del tag <html>
+            document.documentElement.lang = lang;
+
+            // Actualizar botones activos
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.lang === lang) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Iterar sobre todos los elementos con data-key
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.dataset.key;
+                if (translations[lang] && translations[lang][key]) {
+                    // Usamos innerHTML para permitir tags como <br> o <p>
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+        }
+
+        // Añadir event listeners a los botones
+        document.getElementById('lang-es').addEventListener('click', () => setLanguage('es'));
+        document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
+
+        // Opcional: Cargar idioma guardado o establecer por defecto
+        // const preferredLang = localStorage.getItem('lang') || 'es';
+        // setLanguage(preferredLang);
+        
+        // Establecer idioma por defecto al cargar
+        setLanguage('es');
+
+    </script>
+
+</body>
+</html>
