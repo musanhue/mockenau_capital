@@ -30,6 +30,18 @@
             font-weight: 700;
             color: #0c3c6d;
         }
+        /* Placeholder de imagen para el equipo */
+        .team-img-placeholder {
+            background-color: #e0e0e0;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: #a0a0a0;
+        }
     </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -44,8 +56,9 @@
 
             <!-- Menú de Navegación -->
             <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about-us" class="text-gray-600 hover:mockenau-blue transition-colors" data-key="nav_about">Quiénes Somos</a>
                 <a href="#services" class="text-gray-600 hover:mockenau-blue transition-colors" data-key="nav_services">Servicios</a>
-                <a href="#achievements" class="text-gray-600 hover:mockenau-blue transition-colors" data-key="nav_achievements">Logros</a>
+                <a href="#team" class="text-gray-600 hover:mockenau-blue transition-colors" data-key="nav_team">Equipo</a>
                 <a href="#contact" class="bg-mockenau-blue text-white py-2 px-5 rounded-full hover:bg-mockenau-blue-dark transition-colors" data-key="nav_contact">Contacto</a>
             </div>
 
@@ -158,11 +171,11 @@
             </div>
         </section>
 
-        <!-- ===== Achievements Section ===== -->
-        <section id="achievements" class="py-20 bg-gray-100">
+        <!-- ===== About Us Section (Replaced Achievements) ===== -->
+        <section id="about-us" class="py-20 bg-gray-100">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mockenau-blue mb-16" data-key="achievements_title">
-                    Nuestra Trayectoria y Logros
+                <h2 class="text-3xl md:text-4xl font-bold text-center mockenau-blue mb-16" data-key="about_title">
+                    Quiénes Somos: Nuestra Trayectoria
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     <!-- Métrica 1: Montos Transados -->
@@ -184,11 +197,46 @@
             </div>
         </section>
 
+        <!-- ===== Team Section ===== -->
+        <section id="team" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mockenau-blue mb-16" data-key="team_title">
+                    Nuestro Equipo
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                    <!-- Miembro 1 -->
+                    <div class="text-center">
+                        <div class="team-img-placeholder">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mockenau-blue mb-2" data-key="team_member1_name">Nombre Miembro 1</h3>
+                        <p class="text-gray-600" data-key="team_member1_desc">
+                            Breve descripción del currículum, destacando experiencia clave, educación y rol dentro de Mockenau Capital.
+                        </p>
+                    </div>
+                    <!-- Miembro 2 -->
+                    <div class="text-center">
+                        <div class="team-img-placeholder">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mockenau-blue mb-2" data-key="team_member2_name">Nombre Miembro 2</h3>
+                        <p class="text-gray-600" data-key="team_member2_desc">
+                            Breve descripción del currículum, destacando experiencia clave, educación y rol dentro de Mockenau Capital.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- ===== Footer ===== -->
     <footer id="contact" class="bg-mockenau-blue text-gray-300 py-16">
-        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Columna 1: Logo e Info -->
             <div>
                 <img src="image_937042.png" alt="Mockenau Capital Logo Blanco" class="h-10 mb-4 filter brightness-0 invert">
@@ -201,20 +249,11 @@
             <div>
                 <h4 class="text-lg font-semibold text-white mb-4" data-key="footer_contact_title">Contacto</h4>
                 <ul class="text-sm space-y-2">
-                    <li data-key="footer_address">Av. Principal 123, Oficina 45, Santiago, Chile</li>
-                    <li data-key="footer_phone">+56 2 1234 5678</li>
+                    <li data-key="footer_phone">+56 9 9836 0180</li>
                     <li data-key="footer_email">contacto@mockenaucapital.com</li>
                 </ul>
             </div>
 
-            <!-- Columna 3: Links (placeholder) -->
-             <div>
-                <h4 class="text-lg font-semibold text-white mb-4" data-key="footer_links_title">Enlaces Rápidos</h4>
-                <ul class="text-sm space-y-2">
-                    <li><a href="#services" class="hover:text-white" data-key="nav_services">Servicios</a></li>
-                    <li><a href="#achievements" class="hover:text-white" data-key="nav_achievements">Logros</a></li>
-                </ul>
-            </div>
         </div>
         <div class="container mx-auto px-6 text-center text-gray-400 mt-12 border-t border-gray-700 pt-8 text-sm">
             <p data-key="footer_copyright">© 2025 Mockenau Capital. Todos los derechos reservados.</p>
@@ -227,8 +266,9 @@
         // Objeto con todas las traducciones
         const translations = {
             es: {
+                nav_about: "Quiénes Somos",
                 nav_services: "Servicios",
-                nav_achievements: "Logros",
+                nav_team: "Equipo",
                 nav_contact: "Contacto",
                 hero_title: "Socios estratégicos en finanzas y desarrollo de negocios",
                 hero_subtitle: "Asesoría integral para optimizar su capital y potenciar su crecimiento.",
@@ -258,24 +298,28 @@
                     <p>&bull; Gobiernos corporativos.</p>
                     <p>&bull; Planificación tributaria.</p>
                 `,
-                achievements_title: "Nuestra Trayectoria y Logros",
+                about_title: "Quiénes Somos: Nuestra Trayectoria",
                 metric1_value: "+1.500 M",
                 metric1_label: "En montos transados",
                 metric2_value: "+50",
                 metric2_label: "Clientes satisfechos",
                 metric3_value: "+15",
                 metric3_label: "Años de experiencia",
+                team_title: "Nuestro Equipo",
+                team_member1_name: "Nombre Miembro 1",
+                team_member1_desc: "Breve descripción del currículum, destacando experiencia clave, educación y rol dentro de Mockenau Capital.",
+                team_member2_name: "Nombre Miembro 2",
+                team_member2_desc: "Breve descripción del currículum, destacando experiencia clave, educación y rol dentro de Mockenau Capital.",
                 footer_about: "Socios estratégicos en finanzas, inversiones y desarrollo de negocios.",
                 footer_contact_title: "Contacto",
-                footer_address: "Av. Principal 123, Oficina 45, Santiago, Chile",
-                footer_phone: "+56 2 1234 5678",
+                footer_phone: "+56 9 9836 0180",
                 footer_email: "contacto@mockenaucapital.com",
-                footer_links_title: "Enlaces Rápidos",
                 footer_copyright: "© 2025 Mockenau Capital. Todos los derechos reservados.",
             },
             en: {
+                nav_about: "About Us",
                 nav_services: "Services",
-                nav_achievements: "Achievements",
+                nav_team: "Team",
                 nav_contact: "Contact",
                 hero_title: "Strategic partners in finance and business development",
                 hero_subtitle: "Comprehensive advisory to optimize your capital and boost your growth.",
@@ -305,19 +349,22 @@
                     <p>&bull; Corporate governance.</p>
                     <p>&bull; Tax planning.</p>
                 `,
-                achievements_title: "Our Track Record and Achievements",
-                metric1_value: "+1.5B", // Asumiendo que M es Millones (M) y B es Billones (US)
+                about_title: "About Us: Our Track Record",
+                metric1_value: "+1.5B", // Assuming M is Millions (M) and B is Billions (US)
                 metric1_label: "In transaction value",
                 metric2_value: "+50",
                 metric2_label: "Satisfied clients",
                 metric3_value: "+15",
                 metric3_label: "Years of experience",
+                team_title: "Our Team",
+                team_member1_name: "Team Member 1",
+                team_member1_desc: "Brief description of their curriculum, highlighting key experience, education, and role within Mockenau Capital.",
+                team_member2_name: "Team Member 2",
+                team_member2_desc: "Brief description of their curriculum, highlighting key experience, education, and role within Mockenau Capital.",
                 footer_about: "Strategic partners in finance, investments, and business development.",
                 footer_contact_title: "Contact",
-                footer_address: "Main Ave 123, Office 45, Santiago, Chile",
-                footer_phone: "+56 2 1234 5678",
+                footer_phone: "+56 9 9836 0180",
                 footer_email: "contact@mockenaucapital.com",
-                footer_links_title: "Quick Links",
                 footer_copyright: "© 2025 Mockenau Capital. All rights reserved.",
             }
         };
