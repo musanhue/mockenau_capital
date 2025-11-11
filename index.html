@@ -30,7 +30,7 @@
             font-weight: 700;
             color: #0c3c6d;
         }
-        /* Placeholder de imagen para el equipo */
+        /* Placeholder de imagen para el equipo (para Miembro 2) */
         .team-img-placeholder {
             background-color: #e0e0e0;
             border-radius: 50%;
@@ -110,7 +110,7 @@
                         Socios estratégicos en finanzas y desarrollo de negocios
                     </h1>
                     <p class="text-lg text-gray-200 mb-8" data-key="hero_subtitle">
-                        Asesoría integral para optimizar su capital y potenciar su crecimiento.
+                        Asesoría integral para optimizar tu capital y potenciar tu crecimiento empresarial.
                     </p>
                     <a href="#contact" class="bg-mockenau-blue text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-mockenau-blue-dark transition-colors" data-key="hero_cta">
                         Contáctenos
@@ -203,7 +203,7 @@
                         Somos una empresa dedicada a entregar soluciones financieras integrales, con foco en asesoría estratégica, levantamiento de capital, procesos de M&A y planificación tributaria.
                     </p>
                     <p data-key="about_desc2">
-                        Nuestro propósito es acompañar a personas, familias y empresas en decisiones claves, optimizando su estructura financiera, gestión patrimonial y posicionamiento frente al mercado.
+                        Nuestro propósito es acompañar a personas, familias y empresas en decisiones claves, optimizando estructura financiera, gestión patrimonial y posicionamiento frente al mercado.
                     </p>
                     <p data-key="about_desc3">
                         Contamos con un equipo de profesionales de excelencia, comprometidos con la transparencia, la eficiencia y la creación de valor sostenible para cada cliente.
@@ -222,7 +222,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     <!-- Métrica 1: Montos Negociados -->
                     <div>
-                        <span class="block text-5xl md:text-6xl font-bold mockenau-blue" data-key="metric1_value">+1.500 M</span>
+                        <span class="block text-5xl md:text-6xl font-bold mockenau-blue" data-key="metric1_value">+3.200 M</span>
                         <span class="block text-lg text-gray-600 mt-2" data-key="metric1_label">En montos negociados</span>
                     </div>
                     <!-- Métrica 2: Clientes -->
@@ -232,7 +232,7 @@
                     </div>
                     <!-- Métrica 3: Experiencia -->
                     <div>
-                        <span class="block text-5xl md:text-6xl font-bold mockenau-blue" data-key="metric3_value">+15</span>
+                        <span class="block text-5xl md:text-6xl font-bold mockenau-blue" data-key="metric3_value">+10</span>
                         <span class="block text-lg text-gray-600 mt-2" data-key="metric3_label">Años de experiencia</span>
                     </div>
                 </div>
@@ -248,14 +248,23 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
                     <!-- Miembro 1 -->
                     <div class="text-center">
-                        <div class="team-img-placeholder">
-                             <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-semibold mockenau-blue mb-2" data-key="team_member1_name">Nombre Miembro 1</h3>
+                        <img src="https://firebasestorage.googleapis.com/v0/b/mockenau.firebasestorage.app/o/WhatsApp%20Image%202025-11-11%20at%2018.33.30.png?alt=media&token=bc2782d6-c435-4698-b2db-46c8d8da9e5c" 
+                             alt="Jorge Opazo" 
+                             class="w-[150px] h-[150px] rounded-full mx-auto mb-4 object-cover object-center">
+                        <h3 class="text-2xl font-semibold mockenau-blue mb-2">
+                            <a href="https://www.linkedin.com/in/jorge-eduardo-opazo-arpide-6a642121/" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="hover:underline transition-colors"
+                               data-key="team_member1_name">
+                                Jorge Opazo
+                            </a>
+                        </h3>
                         <p class="text-gray-600" data-key="team_member1_desc">
-                            Breve descripción del currículum, destacando experiencia clave, educación y rol dentro de Möckenau Capital.
+                            Ingeniero Comercial<br>
+                            Ingeniero en Acuicultura<br>
+                            Magister en Gestión de RRHH<br>
+                            Especialización en Desarrollo De Empresas
                         </p>
                     </div>
                     <!-- Miembro 2 -->
@@ -292,7 +301,7 @@
                 <h4 class="text-lg font-semibold text-white mb-4" data-key="footer_contact_title">Contacto</h4>
                 <ul class="text-sm space-y-2">
                     <li data-key="footer_phone">+56 9 9836 0180</li>
-                    <li data-key="footer_email">contacto@mockenaucapital.com</li>
+                    <li data-key="footer_email">contacto@mockenaucapital.cl</li>
                 </ul>
             </div>
 
@@ -352,8 +361,13 @@
                 metric3_label: "Años de experiencia",
                 hitos_title: "Hitos",
                 team_title: "Nuestro Equipo",
-                team_member1_name: "Nombre Miembro 1",
-                team_member1_desc: "Breve descripción del currículum, destacando experiencia clave, educación y rol dentro de Möckenau Capital.",
+                team_member1_name: "Jorge Opazo",
+                team_member1_desc: `
+                    Ingeniero Comercial<br>
+                    Ingeniero en Acuicultura<br>
+                    Magister en Gestión de RRHH<br>
+                    Especialización en Desarrollo De Empresas
+                `,
                 team_member2_name: "Nombre Miembro 2",
                 team_member2_desc: "Breve descripción del currículum, destacando experiencia clave, educación y rol dentro de Möckenau Capital.",
                 footer_about: "Socios estratégicos en finanzas, inversiones y desarrollo de negocios.",
@@ -407,8 +421,13 @@
                 metric3_label: "Years of experience",
                 hitos_title: "Milestones",
                 team_title: "Our Team",
-                team_member1_name: "Team Member 1",
-                team_member1_desc: "Brief description of their curriculum, highlighting key experience, education, and role within Möckenau Capital.",
+                team_member1_name: "Jorge Opazo",
+                team_member1_desc: `
+                    Commercial Engineer<br>
+                    Aquaculture Engineer<br>
+                    Master in HR Management<br>
+                    Specialization in Business Development
+                `,
                 team_member2_name: "Team Member 2",
                 team_member2_desc: "Brief description of their curriculum, highlighting key experience, education, and role within Möckenau Capital.",
                 footer_about: "Strategic partners in finance, investments, and business development.",
