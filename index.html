@@ -54,7 +54,7 @@
                 <img src="https://firebasestorage.googleapis.com/v0/b/mockenau.firebasestorage.app/o/WhatsApp%20Image%202025-11-10%20at%2019.33.37.jpeg?alt=media&token=44f80e42-1b8e-459c-b3cb-1491e79ae7af" alt="Möckenau Capital Logo" class="h-10 md:h-12">
             </div>
 
-            <!-- Menú de Navegación -->
+            <!-- Menú de Navegación (Desktop) -->
             <div class="hidden md:flex space-x-6 items-center">
                 <a href="#about-us" class="text-gray-600 hover:mockenau-blue transition-colors" data-key="nav_about">Quiénes Somos</a>
                 <a href="#services" class="text-gray-600 hover:mockenau-blue transition-colors" data-key="nav_services">Servicios</a>
@@ -62,18 +62,33 @@
                 <a href="#contact" class="bg-mockenau-blue text-white py-2 px-5 rounded-full hover:bg-mockenau-blue-dark transition-colors" data-key="nav_contact">Contacto</a>
             </div>
 
-            <!-- Selector de Idioma -->
-            <div class="flex space-x-2 text-sm">
-                <button id="lang-es" class="lang-btn text-gray-500 hover:mockenau-blue active" data-lang="es">ES</button>
-                <span class="text-gray-300">|</span>
-                <button id="lang-en" class="lang-btn text-gray-500 hover:mockenau-blue" data-lang="en">EN</button>
-            </div>
+            <!-- Controles Lado Derecho: Idioma + Botón Móvil -->
+            <div class="flex items-center space-x-4">
+                <!-- Selector de Idioma -->
+                <div class="flex space-x-2 text-sm">
+                    <button id="lang-es" class="lang-btn text-gray-500 hover:mockenau-blue active" data-lang="es">ES</button>
+                    <span class="text-gray-300">|</span>
+                    <button id="lang-en" class="lang-btn text-gray-500 hover:mockenau-blue" data-lang="en">EN</button>
+                </div>
 
-            <!-- Menú Móvil (placeholder) -->
-            <div class="md:hidden">
-                <!-- Se podría implementar un botón de hamburguesa aquí -->
+                <!-- Botón Menú Móvil -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:mockenau-blue focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </nav>
+
+        <!-- Panel del Menú Móvil -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg absolute top-full left-0 w-full z-40">
+            <a href="#about-us" class="block py-3 px-6 text-gray-600 hover:bg-gray-100" data-key="nav_about">Quiénes Somos</a>
+            <a href="#services" class="block py-3 px-6 text-gray-600 hover:bg-gray-100" data-key="nav_services">Servicios</a>
+            <a href="#team" class="block py-3 px-6 text-gray-600 hover:bg-gray-100" data-key="nav_team">Equipo</a>
+            <a href="#contact" class="block py-3 px-6 text-gray-600 hover:bg-gray-100" data-key="nav_contact">Contacto</a>
+        </div>
     </header>
 
     <!-- ===== Hero Section ===== -->
@@ -262,7 +277,7 @@
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Columna 1: Logo e Info -->
             <div>
-                <img src="https://firebasestorage.googleapis.com/v0/b/mockenau.firebasestorage.app/o/WhatsApp%20Image%202025-11-10%20at%2019.33.37.jpeg?alt=media&token=44f80e42-1b8e-459c-b3cb-1491e79ae7af" alt="Möckenau Capital Logo Blanco" class="h-10 mb-4 filter brightness-0 invert">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mockenau.firebasestorage.app/o/Gemini_Generated_Image_co0hyoco0hyoco0h.png?alt=media&token=8fc1e3dc-4d06-4314-88a8-b4363d0f879a" alt="Möckenau Capital Logo Blanco" class="h-10 mb-4 filter brightness-0 invert">
                 <p class="text-sm" data-key="footer_about">
                     Socios estratégicos en finanzas, inversiones y desarrollo de negocios.
                 </p>
@@ -436,6 +451,27 @@
         
         // Establecer idioma por defecto al cargar
         setLanguage('es');
+
+        // ===== Lógica para el Menú Móvil =====
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (menuButton && mobileMenu) {
+                // 1. Mostrar/Ocultar el menú al hacer clic en el botón
+                menuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // 2. Ocultar el menú al hacer clic en un enlace
+                const menuLinks = mobileMenu.querySelectorAll('a');
+                menuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+        });
 
     </script>
 
