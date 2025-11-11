@@ -51,7 +51,8 @@
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <!-- Logo -->
             <div>
-                <img src="https://firebasestorage.googleapis.com/v0/b/mockenau.firebasestorage.app/o/WhatsApp%20Image%202025-11-10%20at%2019.33.37.jpeg?alt=media&token=44f80e42-1b8e-459c-b3cb-1491e79ae7af" alt="Möckenau Capital Logo" class="h-10 md:h-12">
+                <!-- CAMBIO: Logo más grande (h-10 -> h-12, h-12 -> h-14) -->
+                <img src="https://firebasestorage.googleapis.com/v0/b/mockenau.firebasestorage.app/o/WhatsApp%20Image%202025-11-10%20at%2019.33.37.jpeg?alt=media&token=44f80e42-1b8e-459c-b3cb-1491e79ae7af" alt="Möckenau Capital Logo" class="h-12 md:h-14">
             </div>
 
             <!-- Menú de Navegación (Desktop) -->
@@ -109,8 +110,9 @@
                     <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight" data-key="hero_title">
                         Socios estratégicos en finanzas y desarrollo de negocios
                     </h1>
+                    <!-- CAMBIO: "su capital" -> "tu capital" -->
                     <p class="text-lg text-gray-200 mb-8" data-key="hero_subtitle">
-                        Asesoría integral para optimizar tu capital y potenciar tu crecimiento empresarial.
+                        Asesoría integral para optimizar tu capital y potenciar tu crecimiento.
                     </p>
                     <a href="#contact" class="bg-mockenau-blue text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-mockenau-blue-dark transition-colors" data-key="hero_cta">
                         Contáctenos
@@ -203,7 +205,7 @@
                         Somos una empresa dedicada a entregar soluciones financieras integrales, con foco en asesoría estratégica, levantamiento de capital, procesos de M&A y planificación tributaria.
                     </p>
                     <p data-key="about_desc2">
-                        Nuestro propósito es acompañar a personas, familias y empresas en decisiones claves, optimizando estructura financiera, gestión patrimonial y posicionamiento frente al mercado.
+                        Nuestro propósito es acompañar a personas, familias y empresas en decisiones claves, optimizando su estructura financiera, gestión patrimonial y posicionamiento frente al mercado.
                     </p>
                     <p data-key="about_desc3">
                         Contamos con un equipo de profesionales de excelencia, comprometidos con la transparencia, la eficiencia y la creación de valor sostenible para cada cliente.
@@ -222,6 +224,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     <!-- Métrica 1: Montos Negociados -->
                     <div>
+                        <!-- CAMBIO: +1.500 M -> +3.200 M -->
                         <span class="block text-5xl md:text-6xl font-bold mockenau-blue" data-key="metric1_value">+3.200 M</span>
                         <span class="block text-lg text-gray-600 mt-2" data-key="metric1_label">En montos negociados</span>
                     </div>
@@ -232,6 +235,7 @@
                     </div>
                     <!-- Métrica 3: Experiencia -->
                     <div>
+                        <!-- CAMBIO: +15 -> +10 -->
                         <span class="block text-5xl md:text-6xl font-bold mockenau-blue" data-key="metric3_value">+10</span>
                         <span class="block text-lg text-gray-600 mt-2" data-key="metric3_label">Años de experiencia</span>
                     </div>
@@ -290,10 +294,11 @@
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Columna 1: Logo e Info -->
             <div>
-                <img src="https://firebasestorage.googleapis.com/v0/b/mockenau.firebasestorage.app/o/Gemini_Generated_Image_co0hyoco0hyoco0h.png?alt=media&token=8fc1e3dc-4d06-4314-88a8-b4363d0f879a" alt="Möckenau Capital Logo Blanco" class="h-10 mb-4">
+                <!-- CAMBIO: Logo más grande (h-10 -> h-12) -->
+                <img src="https://firebasestorage.googleapis.com/v0/b/mockenau.firebasestorage.app/o/Gemini_Generated_Image_co0hyoco0hyoco0h.png?alt=media&token=8fc1e3dc-4d06-4314-88a8-b4363d0f879a" alt="Möckenau Capital Logo Blanco" class="h-12 mb-4">
                 <p class="text-sm" data-key="footer_about">
                     Socios estratégicos en finanzas, inversiones y desarrollo de negocios.
-                </p>
+                </Jp>
             </div>
             
             <!-- Columna 2: Contacto -->
@@ -301,6 +306,7 @@
                 <h4 class="text-lg font-semibold text-white mb-4" data-key="footer_contact_title">Contacto</h4>
                 <ul class="text-sm space-y-2">
                     <li data-key="footer_phone">+56 9 9836 0180</li>
+                    <!-- CAMBIO: .com -> .cl -->
                     <li data-key="footer_email">contacto@mockenaucapital.cl</li>
                 </ul>
             </div>
@@ -322,7 +328,8 @@
                 nav_team: "Equipo",
                 nav_contact: "Contacto",
                 hero_title: "Socios estratégicos en finanzas y desarrollo de negocios",
-                hero_subtitle: "Asesoría integral para optimizar su capital y potenciar su crecimiento.",
+                // CAMBIO: "su capital" -> "tu capital"
+                hero_subtitle: "Asesoría integral para optimizar tu capital y potenciar tu crecimiento.",
                 hero_cta: "Contáctenos",
                 hero_image_placeholder: "Imagen profesional de finanzas",
                 services_title: "Nuestros Servicios",
@@ -353,11 +360,13 @@
                 about_desc1: "Somos una empresa dedicada a entregar soluciones financieras integrales, con foco en asesoría estratégica, levantamiento de capital, procesos de M&A y planificación tributaria.",
                 about_desc2: "Nuestro propósito es acompañar a personas, familias y empresas en decisiones claves, optimizando su estructura financiera, gestión patrimonial y posicionamiento frente al mercado.",
                 about_desc3: "Contamos con un equipo de profesionales de excelencia, comprometidos con la transparencia, la eficiencia y la creación de valor sostenible para cada cliente.",
-                metric1_value: "+1.500 M",
+                // CAMBIO: +1.500 M -> +3.200 M
+                metric1_value: "+3.200 M",
                 metric1_label: "En montos negociados",
                 metric2_value: "+50",
                 metric2_label: "Clientes satisfechos",
-                metric3_value: "+15",
+                // CAMBIO: +15 -> +10
+                metric3_value: "+10",
                 metric3_label: "Años de experiencia",
                 hitos_title: "Hitos",
                 team_title: "Nuestro Equipo",
@@ -373,7 +382,8 @@
                 footer_about: "Socios estratégicos en finanzas, inversiones y desarrollo de negocios.",
                 footer_contact_title: "Contacto",
                 footer_phone: "+56 9 9836 0180",
-                footer_email: "contacto@mockenaucapital.com",
+                // CAMBIO: .com -> .cl
+                footer_email: "contacto@mockenaucapital.cl",
                 footer_copyright: "© 2025 Möckenau Capital. Todos los derechos reservados.",
             },
             en: {
@@ -413,11 +423,13 @@
                 about_desc1: "We are a company dedicated to delivering comprehensive financial solutions, focusing on strategic advisory, capital raising, M&A processes, and tax planning.",
                 about_desc2: "Our purpose is to support individuals, families, and companies in key decisions, optimizing their financial structure, wealth management, and market positioning.",
                 about_desc3: "We have a team of excellent professionals committed to transparency, efficiency, and the creation of sustainable value for each client.",
-                metric1_value: "+1.5B", // Assuming M is Millions (M) and B is Billions (US)
+                // CAMBIO: +1.5B -> +3.2B
+                metric1_value: "+3.2B",
                 metric1_label: "In negotiated value",
                 metric2_value: "+50",
                 metric2_label: "Satisfied clients",
-                metric3_value: "+15",
+                // CAMBIO: +15 -> +10
+                metric3_value: "+10",
                 metric3_label: "Years of experience",
                 hitos_title: "Milestones",
                 team_title: "Our Team",
@@ -433,7 +445,8 @@
                 footer_about: "Strategic partners in finance, investments, and business development.",
                 footer_contact_title: "Contact",
                 footer_phone: "+56 9 9836 0180",
-                footer_email: "contact@mockenaucapital.com",
+                // CAMBIO: .com -> .cl
+                footer_email: "contacto@mockenaucapital.cl",
                 footer_copyright: "© 2025 Möckenau Capital. All rights reserved.",
             }
         };
