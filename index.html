@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Möckenau Capital</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="https://firebasestorage.googleapis.com/v0/b/mockenau.firebasestorage.app/o/WhatsApp%20Image%202025-11-10%20at%2019.33.37.jpeg?alt=media&token=44f80e42-1b8e-459c-b3cb-1491e79ae7af">
     <!-- Carga de Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Fuente Inter -->
@@ -29,6 +31,12 @@
         .lang-btn.active {
             font-weight: 700;
             color: #0c3c6d;
+            background-color: #f3f4f6; /* Un fondo sutil para indicar activo */
+            border-radius: 4px;
+        }
+        .lang-btn {
+            padding: 2px 6px;
+            transition: all 0.2s;
         }
         /* Placeholder de imagen para el equipo (para Miembro 2) */
         .team-img-placeholder {
@@ -51,7 +59,6 @@
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <!-- Logo -->
             <div>
-                <!-- CAMBIO: Logo más grande (h-10 -> h-12, h-12 -> h-14) -->
                 <img src="https://firebasestorage.googleapis.com/v0/b/mockenau.firebasestorage.app/o/WhatsApp%20Image%202025-11-10%20at%2019.33.37.jpeg?alt=media&token=44f80e42-1b8e-459c-b3cb-1491e79ae7af" alt="Möckenau Capital Logo" class="h-12 md:h-14">
             </div>
 
@@ -66,10 +73,12 @@
             <!-- Controles Lado Derecho: Idioma + Botón Móvil -->
             <div class="flex items-center space-x-4">
                 <!-- Selector de Idioma -->
-                <div class="flex space-x-2 text-sm">
-                    <button id="lang-es" class="lang-btn text-gray-500 hover:mockenau-blue active" data-lang="es">ES</button>
+                <div class="flex space-x-1 text-sm items-center">
+                    <button id="lang-es" class="lang-btn text-gray-500 hover:mockenau-blue active" data-lang="es">🇪🇸 ES</button>
                     <span class="text-gray-300">|</span>
-                    <button id="lang-en" class="lang-btn text-gray-500 hover:mockenau-blue" data-lang="en">EN</button>
+                    <button id="lang-en" class="lang-btn text-gray-500 hover:mockenau-blue" data-lang="en">🇬🇧 EN</button>
+                    <span class="text-gray-300">|</span>
+                    <button id="lang-de" class="lang-btn text-gray-500 hover:mockenau-blue" data-lang="de">🇩🇪 DE</button>
                 </div>
 
                 <!-- Botón Menú Móvil -->
@@ -97,6 +106,7 @@
         <section class="relative min-h-[60vh] flex items-center overflow-hidden">
             <!-- Video de Fondo -->
             <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+                <!-- CAMBIO: Video actualizado -->
                 <source src="https://firebasestorage.googleapis.com/v0/b/mockenau.firebasestorage.app/o/Drone_Video_of_Mo%CC%88ckenau_Capital.mp4?alt=media&token=03a38db2-f96d-4fb8-8a25-00b664a58d2e" type="video/mp4">
                 Tu navegador no soporta el video.
             </video>
@@ -110,7 +120,6 @@
                     <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight" data-key="hero_title">
                         Socios estratégicos en finanzas y desarrollo de negocios
                     </h1>
-                    <!-- CAMBIO: "su capital" -> "tu capital" -->
                     <p class="text-lg text-gray-200 mb-8" data-key="hero_subtitle">
                         Asesoría integral para optimizar tu capital y potenciar tu crecimiento.
                     </p>
@@ -224,8 +233,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     <!-- Métrica 1: Montos Negociados -->
                     <div>
-                        <!-- CAMBIO: +1.500 M -> +3.200 M -->
-                        <span class="block text-5xl md:text-6xl font-bold mockenau-blue" data-key="metric1_value">+3.200 M</span>
+                        <!-- CAMBIO: +3.200 M -> +3.900 M -->
+                        <span class="block text-5xl md:text-6xl font-bold mockenau-blue" data-key="metric1_value">+3.900 M</span>
                         <span class="block text-lg text-gray-600 mt-2" data-key="metric1_label">En montos negociados</span>
                     </div>
                     <!-- Métrica 2: Clientes -->
@@ -235,7 +244,6 @@
                     </div>
                     <!-- Métrica 3: Experiencia -->
                     <div>
-                        <!-- CAMBIO: +15 -> +10 -->
                         <span class="block text-5xl md:text-6xl font-bold mockenau-blue" data-key="metric3_value">+10</span>
                         <span class="block text-lg text-gray-600 mt-2" data-key="metric3_label">Años de experiencia</span>
                     </div>
@@ -253,7 +261,7 @@
                     <!-- Miembro 1 -->
                     <div class="text-center">
                         <img src="https://firebasestorage.googleapis.com/v0/b/mockenau.firebasestorage.app/o/WhatsApp%20Image%202025-11-11%20at%2018.33.30.png?alt=media&token=bc2782d6-c435-4698-b2db-46c8d8da9e5c" 
-                             alt="Jorge Opazo" 
+                             alt="Jorge Opazo Arpide" 
                              class="w-[150px] h-[150px] rounded-full mx-auto mb-4 object-cover object-center">
                         <h3 class="text-2xl font-semibold mockenau-blue mb-2">
                             <a href="https://www.linkedin.com/in/jorge-eduardo-opazo-arpide-6a642121/" 
@@ -261,7 +269,8 @@
                                rel="noopener noreferrer" 
                                class="hover:underline transition-colors"
                                data-key="team_member1_name">
-                                Jorge Opazo
+                                <!-- CAMBIO: Segundo apellido agregado -->
+                                Jorge Opazo Arpide
                             </a>
                         </h3>
                         <p class="text-gray-600" data-key="team_member1_desc">
@@ -294,11 +303,11 @@
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Columna 1: Logo e Info -->
             <div>
-                <!-- CAMBIO: Logo más grande (h-10 -> h-12) -->
-                <img src="https://firebasestorage.googleapis.com/v0/b/mockenau.firebasestorage.app/o/Gemini_Generated_Image_co0hyoco0hyoco0h.png?alt=media&token=8fc1e3dc-4d06-4314-88a8-b4363d0f879a" alt="Möckenau Capital Logo Blanco" class="h-12 mb-4">
+                <!-- CAMBIO: Logo actualizado nuevamente -->
+                <img src="https://firebasestorage.googleapis.com/v0/b/mockenau.firebasestorage.app/o/Gemini_Generated_Image_o9omevo9omevo9om.png?alt=media&token=f26d3c4a-c645-43a1-9be8-91c0362a25f8" alt="Möckenau Capital Logo Blanco" class="h-12 mb-4">
                 <p class="text-sm" data-key="footer_about">
                     Socios estratégicos en finanzas, inversiones y desarrollo de negocios.
-                </Jp>
+                </p>
             </div>
             
             <!-- Columna 2: Contacto -->
@@ -306,7 +315,6 @@
                 <h4 class="text-lg font-semibold text-white mb-4" data-key="footer_contact_title">Contacto</h4>
                 <ul class="text-sm space-y-2">
                     <li data-key="footer_phone">+56 9 9836 0180</li>
-                    <!-- CAMBIO: .com -> .cl -->
                     <li data-key="footer_email">contacto@mockenaucapital.cl</li>
                 </ul>
             </div>
@@ -328,7 +336,6 @@
                 nav_team: "Equipo",
                 nav_contact: "Contacto",
                 hero_title: "Socios estratégicos en finanzas y desarrollo de negocios",
-                // CAMBIO: "su capital" -> "tu capital"
                 hero_subtitle: "Asesoría integral para optimizar tu capital y potenciar tu crecimiento.",
                 hero_cta: "Contáctenos",
                 hero_image_placeholder: "Imagen profesional de finanzas",
@@ -360,17 +367,17 @@
                 about_desc1: "Somos una empresa dedicada a entregar soluciones financieras integrales, con foco en asesoría estratégica, levantamiento de capital, procesos de M&A y planificación tributaria.",
                 about_desc2: "Nuestro propósito es acompañar a personas, familias y empresas en decisiones claves, optimizando su estructura financiera, gestión patrimonial y posicionamiento frente al mercado.",
                 about_desc3: "Contamos con un equipo de profesionales de excelencia, comprometidos con la transparencia, la eficiencia y la creación de valor sostenible para cada cliente.",
-                // CAMBIO: +1.500 M -> +3.200 M
-                metric1_value: "+3.200 M",
+                // CAMBIO: 3.200 -> 3.900
+                metric1_value: "+3.900 M",
                 metric1_label: "En montos negociados",
                 metric2_value: "+50",
                 metric2_label: "Clientes satisfechos",
-                // CAMBIO: +15 -> +10
                 metric3_value: "+10",
                 metric3_label: "Años de experiencia",
                 hitos_title: "Hitos",
                 team_title: "Nuestro Equipo",
-                team_member1_name: "Jorge Opazo",
+                // CAMBIO: Apellido agregado
+                team_member1_name: "Jorge Opazo Arpide",
                 team_member1_desc: `
                     Ingeniero Comercial<br>
                     Ingeniero en Acuicultura<br>
@@ -382,7 +389,6 @@
                 footer_about: "Socios estratégicos en finanzas, inversiones y desarrollo de negocios.",
                 footer_contact_title: "Contacto",
                 footer_phone: "+56 9 9836 0180",
-                // CAMBIO: .com -> .cl
                 footer_email: "contacto@mockenaucapital.cl",
                 footer_copyright: "© 2025 Möckenau Capital. Todos los derechos reservados.",
             },
@@ -423,17 +429,17 @@
                 about_desc1: "We are a company dedicated to delivering comprehensive financial solutions, focusing on strategic advisory, capital raising, M&A processes, and tax planning.",
                 about_desc2: "Our purpose is to support individuals, families, and companies in key decisions, optimizing their financial structure, wealth management, and market positioning.",
                 about_desc3: "We have a team of excellent professionals committed to transparency, efficiency, and the creation of sustainable value for each client.",
-                // CAMBIO: +1.5B -> +3.2B
-                metric1_value: "+3.2B",
+                // CAMBIO: 3.2B -> 3.9B
+                metric1_value: "+3.9B",
                 metric1_label: "In negotiated value",
                 metric2_value: "+50",
                 metric2_label: "Satisfied clients",
-                // CAMBIO: +15 -> +10
                 metric3_value: "+10",
                 metric3_label: "Years of experience",
                 hitos_title: "Milestones",
                 team_title: "Our Team",
-                team_member1_name: "Jorge Opazo",
+                // CAMBIO: Apellido agregado
+                team_member1_name: "Jorge Opazo Arpide",
                 team_member1_desc: `
                     Commercial Engineer<br>
                     Aquaculture Engineer<br>
@@ -445,17 +451,74 @@
                 footer_about: "Strategic partners in finance, investments, and business development.",
                 footer_contact_title: "Contact",
                 footer_phone: "+56 9 9836 0180",
-                // CAMBIO: .com -> .cl
                 footer_email: "contacto@mockenaucapital.cl",
                 footer_copyright: "© 2025 Möckenau Capital. All rights reserved.",
+            },
+            // CAMBIO: Traducciones al Alemán
+            de: {
+                nav_about: "Über uns",
+                nav_services: "Dienstleistungen",
+                nav_team: "Team",
+                nav_contact: "Kontakt",
+                hero_title: "Strategische Partner für Finanzen und Geschäftsentwicklung",
+                hero_subtitle: "Umfassende Beratung zur Optimierung Ihres Kapitals und zur Steigerung Ihres Wachstums.",
+                hero_cta: "Kontaktieren Sie uns",
+                hero_image_placeholder: "Professionelles Finanzbild",
+                services_title: "Unsere Dienstleistungen",
+                service1_title: "Finanzberatung",
+                service1_desc: `
+                    <p>&bull; Kapitalbeschaffung und Eventualverbindlichkeiten.</p>
+                    <p>&bull; Verhandlungen mit Finanzinstituten.</p>
+                    <p>&bull; Optimierung der Kapitalstruktur.</p>
+                `,
+                service2_title: "Geschäftsentwicklung",
+                service2_desc: `
+                    <p>&bull; Neue Dienstleistungen und/oder Produkte.</p>
+                    <p>&bull; Strategische Allianzen.</p>
+                    <p>&bull; Expansion.</p>
+                `,
+                service3_title: "Corporate Finance",
+                service3_desc: `
+                    <p>&bull; Anlageberatung.</p>
+                    <p>&bull; M&A (Fusionen und Übernahmen).</p>
+                `,
+                service4_title: "Steuerberatung",
+                service4_desc: `
+                    <p>&bull; Spaltungen.</p>
+                    <p>&bull; Corporate Governance.</p>
+                    <p>&bull; Steuerplanung.</p>
+                `,
+                about_title: "Über uns",
+                about_desc1: "Wir sind ein Unternehmen, das umfassende Finanzlösungen anbietet, mit Fokus auf strategische Beratung, Kapitalbeschaffung, M&A-Prozesse und Steuerplanung.",
+                about_desc2: "Unser Ziel ist es, Einzelpersonen, Familien und Unternehmen bei wichtigen Entscheidungen zu begleiten und ihre Finanzstruktur, Vermögensverwaltung und Marktpositionierung zu optimieren.",
+                about_desc3: "Wir verfügen über ein Team von exzellenten Fachleuten, die sich der Transparenz, Effizienz und der Schaffung von nachhaltigem Wert für jeden Kunden verpflichtet haben.",
+                metric1_value: "+3.900 M",
+                metric1_label: "An verhandeltem Volumen",
+                metric2_value: "+50",
+                metric2_label: "Zufriedene Kunden",
+                metric3_value: "+10",
+                metric3_label: "Jahre Erfahrung",
+                hitos_title: "Meilensteine",
+                team_title: "Unser Team",
+                team_member1_name: "Jorge Opazo Arpide",
+                team_member1_desc: `
+                    Wirtschaftsingenieur<br>
+                    Ingenieur für Aquakultur<br>
+                    Master in Personalmanagement<br>
+                    Spezialisierung auf Unternehmensentwicklung
+                `,
+                team_member2_name: "Teammitglied 2",
+                team_member2_desc: "Kurze Beschreibung des Lebenslaufs, Hervorhebung wichtiger Erfahrungen, Ausbildung und Rolle bei Möckenau Capital.",
+                footer_about: "Strategische Partner für Finanzen, Investitionen und Geschäftsentwicklung.",
+                footer_contact_title: "Kontakt",
+                footer_phone: "+56 9 9836 0180",
+                footer_email: "contacto@mockenaucapital.cl",
+                footer_copyright: "© 2025 Möckenau Capital. Alle Rechte vorbehalten.",
             }
         };
 
         // Función para cambiar el idioma
         function setLanguage(lang) {
-            // Guardar preferencia (opcional)
-            // localStorage.setItem('lang', lang);
-
             // Cambiar el idioma del tag <html>
             document.documentElement.lang = lang;
 
@@ -480,11 +543,8 @@
         // Añadir event listeners a los botones
         document.getElementById('lang-es').addEventListener('click', () => setLanguage('es'));
         document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
+        document.getElementById('lang-de').addEventListener('click', () => setLanguage('de'));
 
-        // Opcional: Cargar idioma guardado o establecer por defecto
-        // const preferredLang = localStorage.getItem('lang') || 'es';
-        // setLanguage(preferredLang);
-        
         // Establecer idioma por defecto al cargar
         setLanguage('es');
 
